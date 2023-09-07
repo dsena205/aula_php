@@ -29,9 +29,8 @@
         }
 
 
-        function __construct($agencia,$codigo,$dataDecriacao,$titulo,$senha,$saldo,$cancelada)
+        function __construct($agencia,$codigo,$dataDecriacao,$titulo,$senha,$saldo)
         {
-
             $this->agencia= $agencia;
             $this->codigo = $codigo;
             $this->dataDecriacao =$dataDecriacao;
@@ -45,7 +44,7 @@
          // metodo destrutor finaliza o projeto
 
           function __destruct(){
-            echo "<br>Objeto{$this->nome} finalizado ... <br>";
+            echo "<br>Objeto conta{$this->codigo} de {$this->titular->nome} finalizada ... <br>";
           }
 
 
